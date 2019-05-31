@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<agm-map 
+    [latitude]="homeLat" 
+    [longitude]="homeLon"  
+    [minZoom]="8"
+    [disableDefaultUI]="true"
+
+> 
+    <agm-marker
+    *ngFor="let plane of aircrafts" 
+    [latitude]="plane.lat" 
+    [longitude]="plane.lon"
+    [iconUrl]="getIconURL(plane.track)"
+    [opacity]="0.5"
+     >
+        <agm-snazzy-info-window [maxWidth]="50" [closeWhenOthersOpen]="true">
+           <ng-template><div *ngIf="plane.flight">{{ plane.flight }}</div>
+            <br> 
+                Hdg: {{ plane.track }}
+            <br>
+                Alt: {{ plane.altitude }}
+            </ng-template>
+        </agm-snazzy-info-window>
+    </agm-marker>
+</agm-map>
+
+</html>

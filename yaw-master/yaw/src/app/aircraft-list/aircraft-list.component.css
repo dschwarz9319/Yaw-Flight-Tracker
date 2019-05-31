@@ -1,0 +1,13 @@
+span {
+    padding: 5px;
+}
+
+html {
+    margin: auto 10px;
+    height: auto;
+}
+
+header {
+   /* color: rgb(202, 226, 194); */
+    color: rgb(51,51,51)
+}
