@@ -1,5 +1,5 @@
 # Yaw flight tracker
-Group Project by: Daniel Schwarz, Patrick Jasinski, and Trung Nyugen
+Authors: Daniel Schwarz, Patrick Jasinski, and Trung Nyugen
 ## General
 Yaw flight tracker is a flight tracker webapp that I am using to monitor air traffic above my house. It will be hosted on patolento.com. The system uses [dump1090-mutiability](https://github.com/mutability/dump1090), nodejs, express, and angularjs, to render realtime flight data from an RTL-SDR reciever and an antenna mounted in my attic.
 ## JSON Structure 
